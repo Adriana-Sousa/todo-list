@@ -1,3 +1,7 @@
+body {
+    background-color: #030718;
+}
+
 #card {
     width: 600px;
     min-height: 550px;
@@ -6,10 +10,12 @@
     margin: auto;
     margin-top: 1.5rem;
     border-radius: 10px;
+    background-color: #00000a; /* Lilás */
 }
 
 h1 {
     margin-left: 2rem;
+    color: #2b4fc5;
 }
 
 /* para centralizar o container é definido a largura dele 
@@ -41,7 +47,7 @@ o flex 1, ocupa todo o espaço disponivel */
 
 /* dar cor ao botão, remove a borda e aumenta a legura dele*/
 #form_add_todo button {
-    background-color: #F4B200;
+    background-color: #3a58df;
     border: none;
     border-radius: 7px;
     width: 3rem;
@@ -57,9 +63,10 @@ remove o espaçamento interno e adiciona uma borda cinza claro
  #todo-list {
     list-style: none;
     padding: 0;
-    border: 1px solid #EBEBEC;
+    border: 1px solid #161618;
     border-radius: 7px;
     margin-top: 1.5rem;
+    background-color: #060614;
  }
 
  /* adicionar o espaçamento interno dos itens */
@@ -68,11 +75,13 @@ remove o espaçamento interno e adiciona uma borda cinza claro
     padding-right: 0.3rem;
     display: flex;
     margin-right: 0;
+    
  }
 #todo-list li span {
     margin-left: 0.7rem;
    flex: 1;
     word-wrap: break-word;
+    color: rgb(197, 193, 193);
 }
  #todo-list li button {
     border: none;
@@ -81,6 +90,7 @@ remove o espaçamento interno e adiciona uma borda cinza claro
     margin-left: 1rem;
     border-radius: 7px;
     background-color: transparent;
+    color: white;
  }
 
  #todo-list li button:hover {
@@ -90,5 +100,5 @@ remove o espaçamento interno e adiciona uma borda cinza claro
  /* :nth-child(odd), pseudo classe que representa elementos na posição impar
  pinta as linhas impares de cinza */
  #todo-list li:nth-child(odd) {
-    background-color: #F6F6F6;
+    background-color: #1e2235;
  }
