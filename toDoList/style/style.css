@@ -1,0 +1,104 @@
+body {
+    background-color: #030718;
+}
+
+#card {
+    width: 600px;
+    min-height: 550px;
+    align-content: center;
+    align-self: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    background-color: #00000a; /* Lilás */
+}
+
+h1 {
+    margin-left: 2rem;
+    color: #2b4fc5;
+}
+
+/* para centralizar o container é definido a largura dele 
+e definido as margens laterais como automaticas
+top e botton 0, left e right auto, se adapta a width */
+.container {
+    width: 500px;
+    margin: 0 auto;
+    
+}
+
+/* define o form como um container flex
+coloca um espaçamento entre os itens */
+
+#form_add_todo {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* a propriedade flex define como um item sera posicionado no espaço disponivel dentro de seu container
+o flex 1, ocupa todo o espaço disponivel */
+#form_add_todo input {
+    flex: 1;
+    border: 1px solid black;
+    height: 2rem;
+    padding: 0 0.5rem;
+    border-radius: 7px;
+}
+
+/* dar cor ao botão, remove a borda e aumenta a legura dele*/
+#form_add_todo button {
+    background-color: #3a58df;
+    border: none;
+    border-radius: 7px;
+    width: 3rem;
+}
+
+/* estilizar a lista de itens
+list-style - remove os marcadores da lista
+word-wrap: breack-word, palavras podem ser quebradas, 
+altera o texto para quebrar as palavras caso atinja a borda do container
+remove o espaçamento interno e adiciona uma borda cinza claro
+ */
+
+ #todo-list {
+    list-style: none;
+    padding: 0;
+    border: 1px solid #161618;
+    border-radius: 7px;
+    margin-top: 1.5rem;
+    background-color: #060614;
+ }
+
+ /* adicionar o espaçamento interno dos itens */
+ #todo-list li {
+    padding: 0.5rem 1rem;
+    padding-right: 0.3rem;
+    display: flex;
+    margin-right: 0;
+    
+ }
+#todo-list li span {
+    margin-left: 0.7rem;
+   flex: 1;
+    word-wrap: break-word;
+    color: rgb(197, 193, 193);
+}
+ #todo-list li button {
+    border: none;
+    margin: auto;
+    width: 2rem;
+    margin-left: 1rem;
+    border-radius: 7px;
+    background-color: transparent;
+    color: white;
+ }
+
+ #todo-list li button:hover {
+    background-color: #888;
+ }
+
+ /* :nth-child(odd), pseudo classe que representa elementos na posição impar
+ pinta as linhas impares de cinza */
+ #todo-list li:nth-child(odd) {
+    background-color: #1e2235;
+ }
